@@ -1,0 +1,72 @@
+header{
+    padding-bottom: 70px;
+    
+}
+.navbar{
+    
+    height: 60px;
+    width: 100%;
+}
+.navbar-brand{
+    float: left;
+    margin-left: 2%;
+    color: rgb(247, 250, 253);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.link{
+    font-size: 2px;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    text-decoration: inherit;
+}
+.logbtn{
+    display: flex;
+    margin-right: 10%;
+}
+.logoutbtn{
+    color: rgb(243, 238, 238);
+    background-color: rgb(65, 184, 158);
+    width: 120px;
+    border-color: none ;
+    font-weight: 700;
+    margin-right: 5%;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+.switcher{
+    display: flex;
+    padding-left: 10px;
+    background-color: rgba(5, 5, 5, 0.747);
+    height:70px;
+    padding-top: 15px;
+    position:fixed;
+    width: 100%;
+    z-index: 20;
+    
+    
+}
+.switcher img{
+    position: absolute;
+    width: 75px;
+    
+}
+.switcher h4{
+    color: aliceblue;
+    margin-left: 62px;
+    margin-top: 5px;
+}
+.switchHolder{
+    display: flex;
+    margin-left: 50%;
+}
+.switchHolder h5{
+    margin-right: 70px;
+    
+}
+span{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.active{
+    color: rgb(235, 87, 29);
+}

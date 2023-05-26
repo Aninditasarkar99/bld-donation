@@ -1,0 +1,16 @@
+.cardholder{
+    padding: 10px;
+    
+}
+.cardbody{
+    background: linear-gradient(0deg, rgba(3,0,8,1) 5%, rgba(86,15,180,0.9164040616246498) 50%, rgba(221, 192, 129, 0.888) 88%);
+    color: white;
+}
+.banner{
+    padding-top: 5px;
+    height: 50px;
+    width: 100%;
+    background-color:rgba(10, 10, 10, 0.308);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

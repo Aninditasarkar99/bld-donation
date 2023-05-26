@@ -1,0 +1,77 @@
+.container3{
+    background-color:#AFDDFF;
+    display: flex;
+    
+}
+.img{
+   
+   background-image: url("https://img.freepik.com/premium-vector/blood-donation-illustration-concept-with-blood-bag-world-blood-donor-day_95561-346.jpg");
+    height: 100vh;
+    width: 40%;
+    background-size: cover; 
+    padding: 20px;
+    margin-left: 16.1%;
+    
+} 
+form{
+   margin-top: 1%;
+    margin-left: 8%;    
+    text-align: left;
+    padding: 15px;
+    line-height: 2.3;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 600px;
+    
+}
+
+h2{
+    text-align: center;
+    color: aliceblue;
+}
+label{
+    font-size: medium;
+    color: rgb(250, 245, 245);
+    
+    font: 1.2rem Lucida snas;
+}
+.text{
+    padding: 5px;
+    height: 30px;
+    font-size: medium;
+    border-radius: 5px;
+    width: 85%;
+    border: none;
+    background-color: bisque;
+}
+.container3 button{
+    padding: 8px;
+    font: 1em sans-serif;
+    background-color: rgb(20, 20, 156);
+    border: none;
+    border-radius: 5px;
+    color: rgb(253, 251, 251);
+    cursor: pointer;
+    width: 35%;
+}
+span{
+    color: antiquewhite;
+    cursor: pointer;
+    
+}
+.side{
+    height: 250px;
+    margin-top: 8.1%;
+    
+}
+.head{
+    font: 1em sans-serif;
+    font-weight: 800;
+    color: aliceblue;
+    float: right;
+    text-align: right;
+}
+.lastext{
+    color: black;
+}

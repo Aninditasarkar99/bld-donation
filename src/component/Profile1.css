@@ -1,0 +1,73 @@
+
+.conProfile{
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 35px;
+    border:5px solid rgba(12, 12, 12, 0.212);
+    background: radial-gradient(circle, rgba(205, 152, 66, 0.658) 5%, rgba(208, 86, 15, 0.671) 50%, rgba(131, 93, 184, 0.699) 88%);
+    position: absolute;
+    width: 570px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.conProfile input{
+    width: 250px;
+    height: 25px;
+    border: none;
+    color: rgb(8, 8, 8);
+    
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.buttonEdit {
+    position: absolute;
+    margin-left:50%;
+    margin-top: -18px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    /* color: white; */
+    width: 40px;
+    border-color: rgba(0, 0, 0, 0.171);
+    font-size: 20px;
+}
+.buttonEdit i{
+    color: rgb(65, 184, 158);
+    background-color: aliceblue;
+    font-size: 38px;
+}
+.buttonConfirm{
+    position: absolute;
+    margin-left:50%;
+    margin-top: -40px;
+    background-color: rgb(65, 184, 158);
+    border-radius: 7px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-color: rgba(0, 0, 0, 0.171);
+    font-size: 20px;
+}
+
+.name{
+   display: flex;
+   flex-direction: row; 
+   line-height: 50px;
+   column-gap: 12px;
+   margin-bottom: 8px;
+}
+
+.bloodGroup{
+    margin-left: 8px;
+
+}
+.image img{
+   margin-left: 600px;
+   margin-top: 50px;
+   width: 600px;
+   background-size: auto;
+   animation: App-logo-spin infinite 4s linear;
+}
