@@ -17,7 +17,7 @@ const port = 5000;
 
 //Mongodb connections
 // const mongoString="mongodb://127.0.0.1:27017";
-const mongoString="mongodb+srv://sarkaranindita55:12345@cluster0.k8y3npq.mongodb.net/"
+const mongoString="mongodb+srv://sarkaranindita55:12345@cluster0.nvwhbh1.mongodb.net/"
 mongoose.connect(mongoString);
 const database = mongoose.connection;
 
