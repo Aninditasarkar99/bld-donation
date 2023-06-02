@@ -35,7 +35,7 @@ function Dashboard(){
        // get diteals of donors who's are available
        {
        axios
-         .get("http://localhost:5000/getDitealsStatus/true" )
+         .get("https://bld-donation-api.onrender.com/getDitealsStatus/true" )
          .then((response)=>{
           setProfile(response.data);
          })
@@ -49,7 +49,7 @@ function Dashboard(){
        // get diteals of donors who's are reuqested by current login user
        if(donor_id !==''){
        axios
-       .get(`http://localhost:5000/getRequestDiteals/${donor_id}` )
+       .get(`https://bld-donation-api.onrender.com/getRequestDiteals/${donor_id}` )
          .then((message)=>{
           setRequestProfile(message.data);
           
@@ -61,7 +61,7 @@ function Dashboard(){
        }
        if(donor_id !==''){
         axios
-        .get(`http://localhost:5000/donorToUserAcceptUser/${donor_id}` )
+        .get(`https://bld-donation-api.onrender.com/donorToUserAcceptUser/${donor_id}` )
         .then((response)=>{
             setDonername(response.data[0].donorName)
             setDonerphno(response.data[0].donorPhoneNumber)

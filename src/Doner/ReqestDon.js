@@ -31,7 +31,7 @@ function send(e,userEmail,userName,userPinCode,userPhoneNumber,userBloodGroup,do
     }      
 
     axios
-    .patch(`http://localhost:5000/updateDonor/${id}`, registerData)
+    .patch(`https://bld-donation-api.onrender.com/updateDonor/${id}`, registerData)
     .then(() => {
         console.log("Data updated and added to database")
         //alert(`Your status change to ${message} `);
@@ -57,7 +57,7 @@ function send(e,userEmail,userName,userPinCode,userPhoneNumber,userBloodGroup,do
     }
 
     axios
-    .post('http://localhost:5000/donorToUserAccept', requestData)
+    .post('https://bld-donation-api.onrender.com/donorToUserAccept', requestData)
     .then(() => {
         console.log("Data Created added to database")
         alert(`You sucessfully aceepted request of ${userName}`)
@@ -84,7 +84,7 @@ const cancel= (e,email)=>{
             donorEmail:donor_id,
         }
         axios
-        .delete('http://localhost:5000/userToDonorDelete' ,{data:data})
+        .delete('https://bld-donation-api.onrender.com/userToDonorDelete' ,{data:data})
         .then(() => {
             alert(`Request delete to ${email}`)
             console.log("Data Deleted From Database")

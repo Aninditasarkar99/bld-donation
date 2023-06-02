@@ -27,7 +27,7 @@ function Register(){
 
         //axios 
         axios
-        .post('http://localhost:5000/register', registerData)
+        .post('https://bld-donation-api.onrender.com/register', registerData)
         .then(() => {
             console.log("Data Created added to database")
             alert('Registration Sucessfull')

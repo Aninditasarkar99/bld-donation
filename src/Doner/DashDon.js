@@ -57,7 +57,7 @@ function DashDon(){
     //get diteals of donor for set the avialabe switch status
     if(donor_id !==''){
         axios
-        .get(`http://localhost:5000/getDitealsDonor/${donor_id}` )
+        .get(`https://bld-donation-api.onrender.com/getDitealsDonor/${donor_id}` )
         .then((response)=>{
          
          setId(response.data[0]._id);
@@ -77,7 +77,7 @@ function DashDon(){
      //get diteals by donor email of which user sent request tor donor 
     if(donor_id !==''){
       axios
-      .get(`http://localhost:5000/getRequestdonor/${donor_id}` )
+      .get(`https://bld-donation-api.onrender.com/getRequestdonor/${donor_id}` )
       .then((response)=>{
          setUserRequest(response.data);
          console.log(response.data)
@@ -92,7 +92,7 @@ function DashDon(){
 
   if(donor_id !==''){
     axios
-    .get(`http://localhost:5000/donorToUserAcceptDonor/${donor_id}` )
+    .get(`https://bld-donation-api.onrender.com/donorToUserAcceptDonor/${donor_id}` )
     .then((response)=>{
       setDonername(response.data[0].userName)
       setDonerphno(response.data[0].userPhoneNumber)
@@ -162,7 +162,7 @@ function getDate(){
     }
 
     axios
-    .patch(`http://localhost:5000/updateDonor/${id}`, registerData)
+    .patch(`https://bld-donation-api.onrender.com/updateDonor/${id}`, registerData)
     .then(() => {
         console.log("Data updated and added to database")
         alert(`Your status change to ${message} `);

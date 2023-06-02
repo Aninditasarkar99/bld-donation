@@ -34,7 +34,7 @@ function Index(){
 }
     const fetchData=()=>{
         axios
-        .post("http://localhost:5000/loginUser",{email,password})
+        .post("https://bld-donation-api.onrender.com/loginUser",{email,password})
         .then((response)=>{
         
          setUser(response.data);

@@ -33,7 +33,7 @@ function LoginDon(){
 }
     const fetchData=()=>{
         axios
-        .post("http://localhost:5000/loginDonor",{email,password})
+        .post("https://bld-donation-api.onrender.com/loginDonor",{email,password})
         .then((response)=>{
          setUser(response.data);
         })
