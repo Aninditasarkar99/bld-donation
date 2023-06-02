@@ -29,6 +29,10 @@ database.once('connected', () => {
     console.log('Database Connected');
 })
 
+app.get('',(req,res)=>{
+    res.send("welcome our project Blood Donation");
+})
+
 //register new user
 app.post('/register', async(req,res)=>{
     const data = new Model({
