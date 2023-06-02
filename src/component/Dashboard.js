@@ -68,7 +68,7 @@ function Dashboard(){
         })
         .catch(err => {
            console.error(err);
-           alert("Something Error Try again")
+        //    alert("Something Error Try again")
          });
     
        }

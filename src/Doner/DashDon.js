@@ -35,7 +35,7 @@ function DashDon(){
        if(pincode==userRequest[i].userPinCode){
           
          result.push(userRequest[i])
-         console.log(post)
+        //  console.log(post)
        }
        setUserRequest(result)
     }
@@ -64,7 +64,7 @@ function DashDon(){
 
          setStatus(response.data[0].status);
          setNextDate(response.data[0].nextDate);
-         console.log(nextDate);
+        //  console.log(nextDate);
 
          })
         .catch(err => {
@@ -80,7 +80,7 @@ function DashDon(){
       .get(`https://bld-donation-api.onrender.com/getRequestdonor/${donor_id}` )
       .then((response)=>{
          setUserRequest(response.data);
-         console.log(response.data)
+        //  console.log(response.data);
       })
       .catch(err => {
          console.error(err);
@@ -94,12 +94,12 @@ function DashDon(){
     axios
     .get(`https://bld-donation-api.onrender.com/donorToUserAcceptDonor/${donor_id}` )
     .then((response)=>{
-      setDonername(response.data[0].userName)
+      setDonername(response.data[0].userName);
       setDonerphno(response.data[0].userPhoneNumber)
     })
     .catch(err => {
        console.error(err);
-       alert("Something Error Try again")
+      //  alert("Something Error Try again")
      });
 
    }
@@ -115,13 +115,13 @@ function getDate(){
  
     let dd1=nextDate.split(",");
 
-    console.log(dd+""+dd1)
+    // console.log(dd+""+dd1)
 
     let dateNext=new Date(dd1[0])
      let timeDifference=dateNext.getTime()-dateCurrent.getTime();
      let daydiff=timeDifference/(1000*60*60*24);
      setDifference(daydiff)
-     console.log(difference);
+    //  console.log(difference);
      if(daydiff >=0){
        //status1=false;
        setTime(daydiff);
