@@ -64,7 +64,7 @@ function Index(){
             </div>
             <div className='password'>
             <label className='lbl'>Password</label><br></br>
-            <input type="password" placeholder='youremail' className='text2' onChange={event=>setPassword(event.target.value)}></input><br></br>
+            <input type="password" placeholder='password' className='text2' onChange={event=>setPassword(event.target.value)}></input><br></br>
             
             </div>
             <div className='btn-div'>
